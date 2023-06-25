@@ -5,6 +5,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  kubo_msgs
+  tf
 )
 
 set( sources
@@ -20,7 +22,7 @@ set( headers
 
 catkin_package(
   LIBRARIES e2box_imu
-  CATKIN_DEPENDS roscpp sensor_msgs std_msgs
+  CATKIN_DEPENDS roscpp sensor_msgs std_msgs kubo_msgs
 )
 
 include_directories(

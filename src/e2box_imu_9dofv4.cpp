@@ -56,6 +56,7 @@ bool e2box_imu_9dofv4::HandlingDataIMU(){
     }
     else {
         m_dwordCounterChecksumFail++;
+        std::cout << "non pass"<< std::endl;
         return false;
     }
     return true;
